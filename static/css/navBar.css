@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+.NavBar {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.Title {
+    display: flex;
+    margin-right: 2rem;
+    margin-left: 5rem;
+}
+.NavBar img {
+    width: 100px;
+    height: 100px;
+    margin-right: 2rem;
+}
+
+.NavBar h1 {
+    max-width: 310px;
+    font-size: 25px;
+    color: #ED157B;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+.NavBar button{
+    margin-right: 5rem;
+    border-radius: 36px;
+    text-align: center;
+    width: 130px;
+    height: 45px;
+    background-color: #353E47;
+    border: none;
+}
+
+.NavBar button a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px; 
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+.NavBar button:hover{
+    transition: all 0.3s ease-in;
+    background: #ED157B;
+    transition: 250ms;
+    cursor: pointer;
+}
