@@ -1,3 +1,36 @@
 {{ define "main" }}
-    
+    <link rel="stylesheet" href="/css/single.css">
+    {{$name := .Title}}
+    <div class="container">
+        {{if eq $name "AreaDoBixo"}}
+            {{partial "areaDoBixoHeader" .}}
+        {{end}}
+        {{range .Params.subTitles}} 
+            <div class="header">
+                <div><h1> {{.title}} </h1></div>
+                <div class="PinkBar"></div>
+            </div> 
+            <div>
+                {{if eq $name "Eventos"}}
+                    {{partial "eventos" .}}
+                {{end}}
+
+                {{if eq $name "extensao"}}
+                    {{partial "extensao" .}}
+                {{end}}
+
+                {{if eq $name "Historia"}}
+                    {{partial "historia" .}}
+                {{end}}
+
+                {{if eq $name "CACCO"}}
+                    {{partial "CACCO" .}}
+                {{end}}
+
+                {{if eq $name "AreaDoBixo"}}
+                    {{partial "areaDoBixo" .}}
+                {{end}}
+            </div>
+        {{end}}
+    </div>
 {{end}}

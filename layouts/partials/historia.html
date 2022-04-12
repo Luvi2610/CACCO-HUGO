@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/css/historia.css">
+
+<div class="containerHistoria">
+    {{if eq .title "Fotos de rolês"}}
+        <img src="/images/programador.jpg" alt="programador">
+    {{else}}
+        <div class="historiaText">
+            <p>{{.content}}</p>
+        </div>
+    {{end}}
+</div> 

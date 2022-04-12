@@ -1,0 +1,55 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/index.css">
+<div class="container">
+   <div class="aboutUs">
+         <img src="/images/Vector.png" alt="imageBg"/>
+      <div class="aboutUsContent">
+         <div class="aboutUsText">
+            <h2>CACCo <h3>-Centro Acadêmico de Ciências da Computação</h3> </h2>
+            <p>Órgão representante dos alunos de Ciência da Computação da Universidade Estadual Paulista-Julio de Mesquita Filho(UNESP).</p>
+         </div>
+         <button class="buttonAbout"><a href='/historia' style="color: #fff">Saiba mais</a></button>
+      </div>  
+   </div>
+   <div class='Contact'>
+      <div class='text'>
+         <h2>Contato</h2>
+
+      </div>
+         <form onSubmit={sendEmail}>
+            <div class="formContainer">
+               <div class="col-8 form-group mx-auto">
+                  <input type="text" class="form-control" placeholder="Name" name="name"/>
+               </div>
+               <div class="col-8 form-group pt-2 mx-auto">
+                  <input type="email" class="form-control" placeholder="Email Address" name="email"/>
+               </div>
+               <div class="col-8 form-group pt-2 mx-auto">
+                  <input type="text" class="form-control" placeholder="Subject" name="subject"/>
+               </div>
+               <div class="col-8 form-group pt-2 mx-auto">
+                  <input type="number" class="form-control" placeholder="Phone" name="phone"/>
+               </div>
+               <div class="col-8 form-group pt-2 mx-auto">
+                  <textarea class="form-control-message" id="" cols="30" rows="8" placeholder="Your Message" name="message"></textarea>
+               </div>
+               <div class="col-8 form-group pt-3 mx-auto">
+                  <input type="submit" class="btn" value="Send Message"/>
+               </div>
+            </div>
+         </form>
+         <div class='socialMedia'>Redes Sociais</div>
+            <div class='icons'>   
+                  <a href = "https://www.w3schools.com/" style="color: #fff">
+                     <BsInstagram size={30} color='#ffff'/>@CACCo
+                  </a>
+            </div>
+            <div class='icons'>
+               <a href = "https://www.w3schools.com/" style="color: #fff">    
+                  <BsFacebook size={30} color='#ffff'/>@CACCo
+               </a>
+            </div>
+   </div>
+   </div>
+</div>
+{{end}}

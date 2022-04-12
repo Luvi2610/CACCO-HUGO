@@ -1,0 +1,20 @@
+.containerHistoria {
+    display: flex;
+    justify-content: center;
+}
+
+.containerHistoria img {
+    border-radius: 22px;
+    border: solid #000 5px;
+    width: 350px;    
+}
+
+.historiaText p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Roboto',sans-serif;
+}
+
+.historiaText {
+    width: 500px
+}

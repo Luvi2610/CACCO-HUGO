@@ -1,0 +1,8 @@
+.headerBixo {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerBixo img {
+    width: 100%;
+}

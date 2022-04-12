@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/css/cacco.css">
+
+<div class="containerCacco">
+    {{if eq .title "Estatuto" "Atas de Reuniões"}}
+        <a href="#"><button class="buttonPdf"><i class="fa-solid fa-file" style="color:#Fff"></i>Lorem.pdf</button></a>
+    {{end}}
+    {{if eq .title  "Sobre o CACCO" "Nossos princípios"}}
+        <div class="caccoText">
+            <p>{{.text}}</p>
+        </div>
+    {{end}}
+</div> 

@@ -4,7 +4,7 @@
         <img src="/images/caccoPink.svg" alt="Logo CACCO">
         <h1> <span style="color: #FFF">Centro Acadêmico de </span>Ciências da Computação</h1>
     </div>
-    {{ range .Pages }}
+    {{ range .Site.Pages }}
         <button><a href="{{ .Permalink }}">{{.Title}}</a></button>
     {{end}}   
 </div> 
